@@ -10,7 +10,7 @@
     console.log(repeat<string>("x", 8))
     console.log(repeat<number>(3, 3))
 
-    const repeat2 = <T>(elm: T, len: number): T[] {
+    const repeat2 = <T>(elm: T, len: number): T[] => {
         const res: T[] = []
         for (let i = 0; i < len; i++) {
             res.push(elm)
