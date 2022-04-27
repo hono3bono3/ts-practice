@@ -1,6 +1,8 @@
-const nums: number[] = [1,2,3]
-const strs: string[] = ['1','2','3']
-const strOrNums: (number|string)[] = [1, '2', 3]
+/* eslint-disable no-unused-vars */
+
+const nums: number[] = [1, 2, 3]
+const strs: string[] = ['1', '2', '3']
+const strOrNums: (number | string)[] = [1, '2', 3]
 const consts: readonly string[] = ['1']
 // consts.push('2') //=> Property 'push' does not exist on type 'readonly string[]'.
 

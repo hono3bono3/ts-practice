@@ -1,25 +1,26 @@
+/* eslint-disable no-unused-vars */
 type HasName = {
-    name: string
+  name: string
 }
 
 type Family<Parent extends HasName, Child extends HasName> = {
-    father: Parent,
-    mother: Parent,
-    child?: Child,
+  father: Parent
+  mother: Parent
+  child?: Child
 }
 
 const obj: Family<{ name: string }, { name: string }> = {
-    father: { name: 'tarou' },
-    mother: { name: 'hanako' },
-    child: { name: 'bouya' }
+  father: { name: 'tarou' },
+  mother: { name: 'hanako' },
+  child: { name: 'bouya' },
 }
 
 type Human<Name = string, Age = number> = {
-    name: Name
-    age: Age
+  name: Name
+  age: Age
 }
 
 const human: Human = {
-    name: 'tarou',
-    age: 19,
+  name: 'tarou',
+  age: 19,
 }
